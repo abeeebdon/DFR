@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,119 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(84, 92, 163, 0.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+styling the head
+facebook logo home 
+and others */
+
+header {
+  width: 100vw;
+  height: 60px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.logo {
+  flex-basis: 27%;
+}
+.navbar {
+  flex: 2;
+}
+.nav-links {
+  flex-basis: 25%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 5px;
+}
+.facebook-logo {
+  color: blue;
+  font-size: 2.5rem;
+}
+.search-icon {
+  font-size: 1.2rem;
+}
+.searchInput {
+  margin-left: 5px;
+  border-radius: 1rem;
+  background-color: rgba(205, 199, 199, 0.2);
+  flex-basis: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.searchInput input {
+  width: 90%;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: rgba(142, 131, 131, 0.9);
+  outline: none;
+}
+
+.navbar {
+  height: 100%;
+  padding: 1rem;
+}
+
+.nav {
+  list-style: none;
+  display: inline;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.nav-img {
+  width: 35px;
+  height: 30px;
+}
+
+.facebook-nav-icon {
+  width: fit-content;
+  height: fit-content;
+  color: rgb(0, 117, 235);
+  padding-left: 10px;
+}
+.facebook-nav-list:hover {
+  background-color: rgba(205, 199, 199, 0.3);
+}
+.nav-link {
+  list-style: none;
+  display: inline;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.style-icon {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: rgba(205, 199, 199, 0.2);
+  border-radius: 60%;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  color: blue;
+}
+.style-icon:hover {
+  background-color: rgba(205, 199, 199, 0.3);
 }
