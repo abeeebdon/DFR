@@ -6,23 +6,23 @@ import { PiUsersThree } from 'react-icons/pi'
 
 const Navbar = () => {
   return (
-    <ul className="nav">
-      <li>
-        <BiHome />
-      </li>
-      <li>
-        <BiVideo />
-      </li>
-      <li>
-        <CiShop />
-      </li>
-      <li>
-        <PiUsersThree />
-      </li>
-      <li>
-        <BiSolidJoystickAlt />
-      </li>
-    </ul>
+    <div className="nav">
+      <div>
+        <BiHome className="navbar-icon" />
+      </div>
+      <div>
+        <BiVideo className="navbar-icon" />
+      </div>
+      <div>
+        <CiShop className="navbar-icon" />
+      </div>
+      <div>
+        <PiUsersThree className="navbar-icon" />
+      </div>
+      <div>
+        <BiSolidJoystickAlt className="navbar-icon" />
+      </div>
+    </div>
   )
 }
 export default Navbar

@@ -1,24 +1,13 @@
+import { BiLogoMessenger } from 'react-icons/bi'
+import { BiBell } from 'react-icons/bi'
+import { FaBars } from 'react-icons/fa'
 const NavLinks = () => {
   return (
-    <div class="nav-links">
-      <li>
-        <span class="fa-solid fa-bars fa-lg"></span>
-      </li>
-      <li>
-        <span class="fa-brands fa-facebook-messenger fa-lg"></span>
-      </li>
-      <li>
-        <span class="fa-solid fa-bell"></span>
-      </li>
-      <li>
-        <img
-          src="./images/img2 (5).jpg"
-          width="40px"
-          height="40px"
-          class="my-profile-images img"
-          alt="img1"
-        />
-      </li>
+    <div class="nav-link">
+      <FaBars className="navlink-icon" />
+      <BiLogoMessenger className="navlink-icon" />
+      <BiBell className="navlink-icon" />
+      <img src="Penguins.jpg" className="profile" alt="profile" />
     </div>
   )
 }
