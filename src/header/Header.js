@@ -1,6 +1,7 @@
 import HeaderLogo from './HeaderLogo'
 import NavLinks from './NavLinks'
 import Navbar from './Navbar'
+import './header.css'
 
 const Header = () => {
   return (

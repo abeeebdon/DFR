@@ -18,96 +18,63 @@ styling the head
 facebook logo home 
 and others */
 
-header {
-  width: 100vw;
-  height: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  background-color: white;
+.container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 1rem;
   justify-content: space-between;
-  gap: 2rem;
+  margin-top: 5rem;
 }
-.logo {
-  flex-basis: 20%;
-}
-.navbar {
+.aside {
   flex-basis: 45%;
 }
-.nav-links {
+
+.contacts {
+  flex-basis: 25%;
+  min-height: 80vh;
+}
+.birthdays {
+  padding: 10px;
+}
+.birthday-heading {
+  margin-bottom: 10px;
+}
+.contacts-icons {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding-top: 10px;
+}
+ul.icons-list {
+  list-style: none;
+  margin-left: 5px;
+  float: right;
+}
+.online-contacts-wrapper {
+  margin: 10px 5px;
+  width: 120px;
+  padding: 10px 0px;
+}
+p.online-user {
+  display: inline;
+  margin-left: 10px;
+  float: right;
+}
+.icon-item {
+  display: inline;
+  margin: 10px;
+}
+.online-contacts-images {
+  border: none;
+  border-radius: 30px;
+}
+
+.flex-item-contacts {
   flex-basis: 25%;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-left: 5px;
-}
-.facebook-logo {
-  color: blue;
-  font-size: 2.5rem;
-}
-.search-icon {
-  font-size: 1.2rem;
-}
-.searchInput {
-  margin-left: 5px;
-  border-radius: 1rem;
-  background-color: rgba(205, 199, 199, 0.2);
-  flex-basis: 80%;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-}
-.searchInput input {
-  width: 90%;
-  font-size: 1rem;
-  background: none;
-  border: none;
-  color: rgba(142, 131, 131, 0.9);
-  outline: none;
-}
-
-.nav {
-  height: 100%;
-  padding: 1rem;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
-.navbar-icon {
-  font-size: 1.8rem;
-  width: 5rem;
-  color: blue;
-}
-.nav-link {
-  list-style: none;
-  display: inline;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 20px;
-  margin-right: 10px;
-  margin-left: 15px;
-}
-.profile {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-}
-
-.navlink-icon {
-  font-size: 1.2rem;
-  color: blue;
+.icons {
+  flex: 2;
 }

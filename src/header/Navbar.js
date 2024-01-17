@@ -3,12 +3,14 @@ import { BiHome } from 'react-icons/bi'
 import { BiVideo } from 'react-icons/bi'
 import { CiShop } from 'react-icons/ci'
 import { PiUsersThree } from 'react-icons/pi'
-
 const Navbar = () => {
   return (
-    <div className="nav">
+    <nav className="nav">
       <div>
         <BiHome className="navbar-icon" />
+      </div>
+      <div>
+        <BiSolidJoystickAlt className="navbar-icon" />
       </div>
       <div>
         <BiVideo className="navbar-icon" />
@@ -19,10 +21,7 @@ const Navbar = () => {
       <div>
         <PiUsersThree className="navbar-icon" />
       </div>
-      <div>
-        <BiSolidJoystickAlt className="navbar-icon" />
-      </div>
-    </div>
+    </nav>
   )
 }
 export default Navbar
