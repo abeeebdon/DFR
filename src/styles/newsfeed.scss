@@ -1,19 +1,19 @@
 .newsfeed-container {
   display: flex;
   flex-direction: column;
-}
-
-.newsfeed {
   width: 100%;
   margin-top: 10vh;
   overflow-x: hidden;
-}
-
-.stories {
+  .stories {
   border: 1px solid rgb(242, 234, 234);
   border-radius: 15px;
   background-color: white;
 }
+}
+
+
+
+
 .story-nav {
   display: flex;
   gap: 1rem;

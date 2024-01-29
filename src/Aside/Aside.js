@@ -1,11 +1,18 @@
-import Profile from './Profile'
-import AsideIcons from './AsideIcons'
-import './aside.css'
+import Profile from '../components/Profile'
+import { aside } from '../data/Data'
+import { FaBell } from 'react-icons/fa'
 const Aside = () => {
   return (
     <aside>
       <Profile />
-      <AsideIcons />
+      {aside.map((side) => {
+        return (
+          <div key={side.id}>
+            <FaBell className="aside-icon" />
+            <p>{side.name}</p>
+          </div>
+        )
+      })}
     </aside>
   )
 }

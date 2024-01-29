@@ -1,11 +1,11 @@
 import { FaBars } from 'react-icons/fa'
-import { BiLogoMessenger } from 'react-icons/bi'
 import { BiBell } from 'react-icons/bi'
+import { BiLogoMessenger } from 'react-icons/bi'
 const NavLinks = () => {
   return (
     <div class="nav-link">
       <div>
-        <FaBars />
+        <FaBars className="navlink-icon" />
       </div>
       <div>
         <BiBell className="navlink-icon" />
@@ -13,7 +13,13 @@ const NavLinks = () => {
       <div>
         <BiLogoMessenger className="navlink-icon" />
       </div>
-      <img src="Penguins.jpg" className="profile" alt="profile" />
+      <img
+        src="Penguins.jpg"
+        className="profile"
+        alt="profile"
+        width="40px"
+        height="40px"
+      />
     </div>
   )
 }

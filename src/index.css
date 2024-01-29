@@ -1,3 +1,5 @@
+@import url(./styles/header.scss);
+@import url(./styles/aside.scss);
 * {
   margin: 0;
   padding: 0;
@@ -77,4 +79,7 @@ p.online-user {
 
 .icons {
   flex: 2;
+}
+.none {
+  display: none;
 }

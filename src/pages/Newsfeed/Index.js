@@ -1,7 +1,6 @@
 import Section1 from './Section1'
 import Section2 from './Section2'
 import Section3 from './Section3'
-import './newsfeed.css'
 const Newsfeed = () => {
   return (
     <div className="newfeed-container">
