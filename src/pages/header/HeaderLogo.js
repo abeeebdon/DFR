@@ -1,4 +1,3 @@
-import { FaBars } from 'react-icons/fa'
 import { BiLogoFacebookCircle } from 'react-icons/bi'
 import { BiSearchAlt2 } from 'react-icons/bi'
 const FacebookLogo = () => {

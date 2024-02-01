@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 const Index = () => {
   return (
     <header>
+      {/* header has a display of flex */}
       <HeaderLogo />
       <Navbar />
       <NavLinks />
