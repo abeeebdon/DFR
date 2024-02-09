@@ -36,16 +36,21 @@ aside {
   grid-area: posts;
 }
 .container {
+  width: 100%;
   display: grid;
+  gap: 1rem;
   grid-template-areas:
     'header header header header header header header'
     'aside aside stories stories stories messenger messenger'
     'aside aside newPost newPost newPost messenger messenger'
     'aside aside posts posts posts messenger messenger'
     'aside aside posts posts posts messenger messenger';
+  justify-content: space-between;
 }
 
 .contacts-icons {
+  position: fixed;
+  right: 0;
   display: flex;
   gap: 10px;
   flex-direction: row;

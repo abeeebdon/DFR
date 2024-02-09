@@ -4,15 +4,20 @@ import { FaBell } from 'react-icons/fa'
 const Index = () => {
   return (
     <aside>
-      <Profile />
-      {aside.map((side) => {
-        return (
-          <div key={side.id}>
-            <FaBell className="aside-icon" />
-            <p>{side.name}</p>
-          </div>
-        )
-      })}
+      <div className="aside-profile">
+        <img src="Penguins.jpg" className="img" alt="profile" />
+        <p className="username">Abeeb Maroof</p>
+      </div>
+      <>
+        {aside.map((side) => {
+          return (
+            <div key={side.id} className="aside-icons">
+              <FaBell />
+              <p>{side.name}</p>
+            </div>
+          )
+        })}
+      </>
     </aside>
   )
 }

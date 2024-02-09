@@ -4,7 +4,12 @@ const Posts = () => {
       <div className="news-head-wrap">
         <div>
           <div className="news-images">
-            <img src="Penguins.jpg" alt="img1" className="news-image" />
+            <img
+              src="Penguins.jpg"
+              alt="img1"
+              style={{ width: '600px' }}
+              className="news-image"
+            />
           </div>
           <div className="news-head">
             <h3 className="news-head-item">Programmers</h3>

@@ -5,13 +5,13 @@ const Stories = () => {
     <section className="stories">
       <div className="link">
         <div className="story">
-          <button className="btn-story-link">Stories</button>
+          <button className="btn">Stories</button>
         </div>
         <div className="story">
-          <button className="btn-story-link">Reels</button>
+          <button className="btn">Reels</button>
         </div>
         <div className="story">
-          <button className="btn-story-link">Rooms</button>
+          <button className="btn">Rooms</button>
         </div>
       </div>
 
