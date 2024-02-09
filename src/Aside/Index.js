@@ -1,7 +1,7 @@
 import Profile from '../components/Profile'
 import { aside } from '../data/Data'
 import { FaBell } from 'react-icons/fa'
-const Aside = () => {
+const Index = () => {
   return (
     <aside>
       <Profile />
@@ -16,4 +16,4 @@ const Aside = () => {
     </aside>
   )
 }
-export default Aside
+export default Index

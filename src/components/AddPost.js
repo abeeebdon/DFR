@@ -1,4 +1,4 @@
-const Section2 = () => {
+const AddPost = () => {
   return (
     <section className="new-post">
       <div className="my-profile-input">
@@ -40,4 +40,4 @@ const Section2 = () => {
     </section>
   )
 }
-export default Section2
+export default AddPost

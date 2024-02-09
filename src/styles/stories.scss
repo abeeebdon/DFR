@@ -1,0 +1,11 @@
+.stories {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  .link {
+    display: flex;
+  }
+  .status {
+    display: flex;
+  }
+}

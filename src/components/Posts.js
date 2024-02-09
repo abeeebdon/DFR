@@ -1,6 +1,6 @@
-const Section3 = () => {
+const Posts = () => {
   return (
-    <section className="newsfeed-posts">
+    <section className="posts">
       <div className="news-head-wrap">
         <div>
           <div className="news-images">
@@ -58,4 +58,4 @@ const Section3 = () => {
     </section>
   )
 }
-export default Section3
+export default Posts

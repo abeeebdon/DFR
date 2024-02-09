@@ -1,5 +1,6 @@
 @import url(./styles/header.scss);
 @import url(./styles/aside.scss);
+@import url(./styles/stories.scss);
 * {
   margin: 0;
   padding: 0;
@@ -19,28 +20,31 @@ body {
 styling the head
 facebook logo home 
 and others */
-
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: aside;
+}
+.stories {
+  grid-area: stories;
+}
+.new-post {
+  grid-area: newPost;
+}
+.posts {
+  grid-area: posts;
+}
 .container {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: space-between;
-  margin-top: 5rem;
-}
-.aside {
-  flex-basis: 45%;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'aside aside stories stories stories messenger messenger'
+    'aside aside newPost newPost newPost messenger messenger'
+    'aside aside posts posts posts messenger messenger'
+    'aside aside posts posts posts messenger messenger';
 }
 
-.contacts {
-  flex-basis: 25%;
-  min-height: 80vh;
-}
-.birthdays {
-  padding: 10px;
-}
-.birthday-heading {
-  margin-bottom: 10px;
-}
 .contacts-icons {
   display: flex;
   gap: 10px;

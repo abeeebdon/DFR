@@ -1,9 +1,9 @@
-import image1 from '../../Images/img2 (5).jpg'
+import image1 from '../Images/img2 (5).jpg'
 
-const Section1 = () => {
+const Stories = () => {
   return (
     <section className="stories">
-      <article className="story-nav">
+      <div className="link">
         <div className="story">
           <button className="btn-story-link">Stories</button>
         </div>
@@ -13,11 +13,11 @@ const Section1 = () => {
         <div className="story">
           <button className="btn-story-link">Rooms</button>
         </div>
-      </article>
+      </div>
 
       <hr />
 
-      <article class="status">
+      <div class="status">
         <div class="story-video-container">
           <img
             src={image1}
@@ -49,8 +49,8 @@ const Section1 = () => {
             style={{ width: '150px', height: '200px' }}
           />
         </div>
-      </article>
+      </div>
     </section>
   )
 }
-export default Section1
+export default Stories

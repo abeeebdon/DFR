@@ -14,4 +14,5 @@ The Header is the home of all head components (3) with a display of flex
    Style
    FLEX @ header.css with a lot of manipulations
 
-# Aside
+## Aside
+ The sidebar

@@ -11,7 +11,7 @@ const Profile = () => {
         />
       </div>
       <div className="flex-item2">
-        <p className="userName asideParagraphs">Username</p>
+        <p className="userName asideParagraphs">Abeeb Maroof</p>
       </div>
     </div>
   )
