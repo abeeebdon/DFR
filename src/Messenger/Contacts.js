@@ -1,5 +1,6 @@
+import { FaLine, FaSearch } from 'react-icons/fa'
+import { onlineContacts } from '../data/Data'
 import Birthdays from './Birthdays'
-import OnlineContacts from './OnlineContacts'
 
 const Contacts = () => {
   return (
@@ -7,8 +8,27 @@ const Contacts = () => {
       <Birthdays />
       <div className="contacts-icons">
         <p>Contacts</p>
+        <div>
+          <FaLine className="icon" />
+          <FaSearch className="icon" />
+        </div>
       </div>
-      <OnlineContacts />
+      <div className="online-contacts">
+        {onlineContacts.map((contact) => {
+          return (
+            <div key={contact.id}>
+              <img
+                src={contact.src}
+                width="45px"
+                height="45px"
+                className="online-contacts-images"
+                alt="img1"
+              />
+              <p className="online-user">{contact.username}</p>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }

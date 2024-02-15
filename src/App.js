@@ -1,18 +1,25 @@
-import Header from './pages/header/Index'
+import Header from './header/Index'
 import Aside from './Aside/Index'
 import Contacts from './Messenger/Contacts'
 import AddPost from './components/AddPost'
 import Posts from './components/Posts'
 import Stories from './components/Stories'
+import { useEffect, useState } from 'react'
 function App() {
+  const [scroll, setScroll] = useState(false)
+  console.log(scroll)
   return (
-    <div className="container">
+    <div className="App">
       <Header />
-      <Aside />
-      <Stories />
-      <AddPost />
-      <Posts />
-      <Contacts className="contacts" />
+      <div className="container">
+        <Aside />
+        <main onScroll={() => setScroll(true)}>
+          <Stories />
+          <AddPost />
+          <Posts />
+        </main>
+        <Contacts className="contacts" />
+      </div>
     </div>
   )
 }

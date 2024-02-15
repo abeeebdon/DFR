@@ -3,7 +3,7 @@ import { BiBell } from 'react-icons/bi'
 import { BiLogoMessenger } from 'react-icons/bi'
 const NavLinks = () => {
   return (
-    <div class="nav-link">
+    <div className="nav-link">
       <div>
         <FaBars className="navlink-icon" />
       </div>

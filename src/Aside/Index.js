@@ -3,7 +3,7 @@ import { aside } from '../data/Data'
 import { FaBell } from 'react-icons/fa'
 const Index = () => {
   return (
-    <aside>
+    <aside className="aside">
       <div className="aside-profile">
         <img src="Penguins.jpg" className="img" alt="profile" />
         <p className="username">Abeeb Maroof</p>

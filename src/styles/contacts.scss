@@ -1,0 +1,24 @@
+.messenger {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  padding: 1rem;
+  .contacts-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      .icon {
+        color: blue;
+        margin: 1rem;
+      }
+    }
+  }
+  .online-contacts {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
