@@ -1,63 +1,41 @@
+import { FaBell, FaLaugh, FaRegCaretSquareDown } from 'react-icons/fa'
 const Posts = () => {
   return (
     <section className="posts">
-      <div className="news-head-wrap">
-        <div>
-          <div className="news-images">
-            <img
-              src="Penguins.jpg"
-              alt="img1"
-              style={{ width: '600px' }}
-              className="news-image"
-            />
+      <div className="post">
+        <div className="head">
+          <div className="details">
+            <img src="Penguins.jpg" alt="img1" className="image" />
+            <div className="name">
+              <p>Oluwadamilare Ajayi</p>
+              <span>1h</span>
+            </div>
           </div>
-          <div className="news-head">
-            <h3 className="news-head-item">Programmers</h3>
-            <br />
-            <p className="news-head-item">Arinze Chuckwu</p>
+          <div className="icons">
+            <FaBell className="icon" />
+            <FaBell className="icon" />
           </div>
         </div>
-        <div className="news-icon">
-          <span className="fa-solid fa-ellipsis"></span>
-          <span className="fa-solid fa-cross"></span>
+        <div className="content">
+          <img src="Penguins.jpg" alt="img1" className="image" />
         </div>
-      </div>
-      <div className="news-outlet">
-        <div className="news-outlet-image">
-          <h2>News image goes here</h2>
-          <img src="Penguins.jpg" alt="News image" style={{ width: '600px' }} />
+        <div className="output">
+          <span></span>
+          <span></span>
         </div>
-      </div>
-
-      <div className="comments-reactions">
-        <div className="like-reactions">
-          <span>emoji</span>
-          <span>emoji</span>
-        </div>
-        <div className="comments">
-          <p>
-            <span id="later">156</span>comments
-          </p>
-        </div>
-      </div>
-      <div className="like-comment-send">
-        <div>
-          <div>
-            <span></span>
+        <div className="reactions">
+          <div className="reaction">
+            <FaLaugh />
+            <span>Like</span>
           </div>
-          <p>Like</p>
-        </div>
-        <div id="comment">
-          <div>
-            <span></span>
+          <div className="reaction">
+            <FaLaugh />
+            <span>Comment</span>
           </div>
-          <p>Comment</p>
-        </div>
-        <div id="send">
-          <div>
-            <span></span>
+          <div className="reaction">
+            <FaRegCaretSquareDown />
+            <span>Send</span>
           </div>
-          <p>Send</p>
         </div>
       </div>
     </section>

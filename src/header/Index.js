@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import HeaderLogo from './HeaderLogo'
 import NavLinks from './NavLinks'
 import Navbar from './Navbar'

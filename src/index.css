@@ -3,6 +3,7 @@
 @import url(./styles/stories.scss);
 @import url(./styles/newPost.scss);
 @import url(./styles/contacts.scss);
+@import url(./styles/posts.scss);
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ and others */
   width: 100%;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto auto auto;
   gap: 1rem;
   justify-content: space-between;
 }
@@ -35,6 +36,7 @@ main {
   overflow: scroll;
   scroll-behavior: smooth;
   padding: 1rem;
+  max-width: 650px;
 }
 /* .contacts-icons {
   position: fixed;

@@ -5,14 +5,26 @@
   margin-right: 0%;
   padding: 1rem;
   padding-right: 0%;
+  @media only screen and (min-width: 100px) {
+    padding-left: 0%;
+    margin-left: 0%;
+  }
   .birthdays {
     padding: 1rem;
+    @media only screen and (min-width: 100px) {
+      padding-left: 0%;
+      margin-left: 0%;
+    }
   }
   .contacts-icons {
     padding: 0px 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (min-width: 100px) {
+      padding-left: 0%;
+      margin-left: 0%;
+    }
     div {
       .icon {
         color: blue;
@@ -22,6 +34,10 @@
   }
   .online-contacts {
     padding: 1rem;
+    @media only screen and (min-width: 100px) {
+      padding-left: 0%;
+      margin-left: 0%;
+    }
     div {
       margin: 1rem 0px;
       padding: 0.5rem;
