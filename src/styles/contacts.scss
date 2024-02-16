@@ -1,9 +1,15 @@
 .messenger {
   width: 100%;
   max-width: 400px;
-  text-align: left;
+  margin: 1rem;
+  margin-right: 0%;
   padding: 1rem;
+  padding-right: 0%;
+  .birthdays {
+    padding: 1rem;
+  }
   .contacts-icons {
+    padding: 0px 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +21,10 @@
     }
   }
   .online-contacts {
+    padding: 1rem;
     div {
+      margin: 1rem 0px;
+      padding: 0.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;

@@ -1,5 +1,5 @@
 import Header from './header/Index'
-import Aside from './Aside/Index'
+import Aside from './Aside'
 import Contacts from './Messenger/Contacts'
 import AddPost from './components/AddPost'
 import Posts from './components/Posts'

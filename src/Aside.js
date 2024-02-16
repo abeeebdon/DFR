@@ -1,7 +1,6 @@
-import Profile from '../components/Profile'
-import { aside } from '../data/Data'
+import { aside } from './data/Data'
 import { FaBell } from 'react-icons/fa'
-const Index = () => {
+const Aside = () => {
   return (
     <aside className="aside">
       <div className="aside-profile">
@@ -21,4 +20,4 @@ const Index = () => {
     </aside>
   )
 }
-export default Index
+export default Aside

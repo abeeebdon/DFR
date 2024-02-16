@@ -1,11 +1,14 @@
 import { FaLine, FaSearch } from 'react-icons/fa'
 import { onlineContacts } from '../data/Data'
-import Birthdays from './Birthdays'
 
 const Contacts = () => {
   return (
     <div className="messenger">
-      <Birthdays />
+      <div className="birthdays">
+        <h3 className="birthday-heading">Birthdays</h3>
+        {/* implement a conditional to display the number of birthdays */}
+        <p>There is no birthday today</p>
+      </div>
       <div className="contacts-icons">
         <p>Contacts</p>
         <div>
