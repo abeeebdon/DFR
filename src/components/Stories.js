@@ -19,7 +19,7 @@ const Stories = () => {
       </div>
 
       <div className="story-video-container">
-        <img src={image1} className="status-img" />
+        <img src={image1} alt="imagg" className="status-img" />
       </div>
     </section>
   )

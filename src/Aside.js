@@ -1,6 +1,8 @@
 import { aside } from './data/Data'
 import { FaBell } from 'react-icons/fa'
 const Aside = () => {
+  // Add a click event to navigate
+
   return (
     <aside className="aside">
       <div className="aside-profile">

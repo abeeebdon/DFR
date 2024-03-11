@@ -1,5 +1,29 @@
+import { useState } from 'react'
 import { FaBell, FaLaugh, FaRegCaretSquareDown } from 'react-icons/fa'
 const Posts = () => {
+  const [reactionCount, setReactionCount] = useState({
+    like: 0,
+    comment: 0,
+    send: 0,
+  })
+  const handleReaction = (e) => {
+    // the switch check what type of reaction and addthe reaction to the reaction which is shown in  output
+    switch (e.target.innerText) {
+      case 'Like':
+        const latest = Number(reactionCount.like) + 1
+        setReactionCount({ ...reactionCount, like: latest })
+        console.log(reactionCount.like)
+        break
+      case 'Comment':
+        const latestComment = Number(reactionCount.comment) + 1
+        setReactionCount({ ...reactionCount, comment: latestComment })
+        console.log(reactionCount.comment)
+        break
+      default:
+        console.log('Send')
+    }
+  }
+
   return (
     <section className="posts">
       <div className="post">
@@ -20,21 +44,21 @@ const Posts = () => {
           <img src="Penguins.jpg" alt="img1" className="image" />
         </div>
         <div className="output">
-          <span></span>
-          <span></span>
+          <span>{reactionCount.like}</span>
+          <span>{reactionCount.comment}</span>
         </div>
         <div className="reactions">
           <div className="reaction">
             <FaLaugh />
-            <span>Like</span>
+            <span onClick={(e) => handleReaction(e)}>Like</span>
           </div>
           <div className="reaction">
             <FaLaugh />
-            <span>Comment</span>
+            <span onClick={(e) => handleReaction(e)}>Comment</span>
           </div>
           <div className="reaction">
             <FaRegCaretSquareDown />
-            <span>Send</span>
+            <span onClick={(e) => handleReaction(e)}>Send</span>
           </div>
         </div>
       </div>

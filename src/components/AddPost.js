@@ -22,7 +22,7 @@ const AddPost = () => {
           <FaBellSlash />
           <p>Photo/video</p>
         </button>
-        <button class="btn">
+        <button className="btn">
           <FaBellSlash />
           <p>Feeling/activity</p>
         </button>
